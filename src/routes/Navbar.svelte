@@ -10,18 +10,16 @@
     a(
       href="/about"
       aria-current!="{$page.url.pathname === '/about' ? 'page' : undefined}"
-    ) #[i.nf.nf-oct-info] About Me
+    ) About Me
 </template>
 
 <style lang="scss">
   .navigation {
     display: flex;
-    height: 48px;
+    height: 50px;
     align-items: center;
     gap: 5px;
     padding: 0 10px;
-    border-bottom: 2px solid transparent;
-    // box-sizing: border-box;
     :nth-child(2) {
       margin-left: auto;
     }
@@ -35,13 +33,11 @@
       font-size: 18px;
       height: calc(100% + 2px);
       padding: 0 10px;
-      border-bottom: 2px solid transparent;
       &:hover {
         color: var(--text-1);
-        border-bottom-color: var(--ov-2) !important;
       }
-      &[aria-current='page'] {
-        border-bottom-color: var(--accent);
+      &[aria-current='page']:not(.logo) {
+        color: var(--ac-0);
       }
       &.logo {
         font-size: 20px;
@@ -53,5 +49,15 @@
         }
       }
     }
+  }
+
+  // Mobile
+  @media (max-aspect-ratio: 4/5) {
+    
+  }
+
+  // Tablet
+  @media (max-aspect-ratio: 4/3) {
+
   }
 </style>

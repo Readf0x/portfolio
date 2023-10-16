@@ -35,7 +35,8 @@
       --text-0: var(--ctp-mocha-subtext0);
       --text-1: var(--ctp-mocha-subtext1);
       --text-2: var(--ctp-mocha-text);
-      --accent: var(--ctp-mocha-sapphire);
+      --ac-0: var(--ctp-mocha-sapphire);
+      --ac-1: var(--ctp-mocha-red);
     }
   }
 
@@ -53,7 +54,8 @@
       --text-0: var(--ctp-latte-subtext0);
       --text-1: var(--ctp-latte-subtext1);
       --text-2: var(--ctp-latte-text);
-      --accent: var(--ctp-latte-sapphire);
+      --ac-0: var(--ctp-latte-sapphire);
+      --ac-1: var(--ctp-latte-red);
     }
   }
 
